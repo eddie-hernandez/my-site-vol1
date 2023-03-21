@@ -1,0 +1,36 @@
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+}
+
+.bio-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1em 7em 2em 12em;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  margin-left: 13em;
+  row-gap: 1em;
+}
+
+.silly-link {
+  color: blue;
+  cursor: pointer;
+}
+
+.silly-link:hover {
+  color: red;
+}

@@ -1,0 +1,27 @@
+.projects {
+  scroll-snap-type: y mandatory;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2em;
+  column-gap: 2em;
+  margin: 2em;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1em;
+  border: 5px solid black;
+  padding: 2em;
+}
+
+.project-image {
+  width: 35em;
+  height: 25em;
+  border: 5px solid black;
+}

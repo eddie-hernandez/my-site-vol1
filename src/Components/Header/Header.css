@@ -1,0 +1,31 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin: 2em 0em;
+  text-align: center;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: center;
+}
+
+/* h5 represents nav-link text! */
+
+h5:hover {
+  color: var(--navhover);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.nav-active {
+  color: blue;
+  text-decoration: underline;
+}
+
+.nav-active h5:hover {
+  color: var(--activehover);
+}
