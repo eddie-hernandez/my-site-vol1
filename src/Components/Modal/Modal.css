@@ -387,7 +387,7 @@ span {
   .modal-box {
     margin: 10% auto;
     width: 75%;
-    padding-bottom: 0em;
+    padding: 2vh;
   }
   .modal-photo {
     width: 40vh;
@@ -406,20 +406,29 @@ span {
     font-size: 20px;
   }
   .modal-container h6 {
-    font-size: 16px;
+    font-size: 12px;
   }
   .modal-text-container {
-    margin: 1em 1em 2em 1em;
+    margin: 1em;
   }
-
+  .fakeTerminal {
+    margin: 15% auto;
+  }
   .fakeTerminal p {
-    font-size: 12px;
+    font-size: 10px;
+    white-space: normal;
   }
   .fakeMenu {
     width: 50vh;
   }
   .fakeScreen {
     width: 50vh;
-    height: 40vh;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .modal-container h2 {
+    font-size: 25px;
   }
 }

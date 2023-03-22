@@ -210,8 +210,8 @@ export function MovieModal({ isMovieModalOpen, closeMovieModal }) {
                   target='_blank'
                   className='link-container'
                 >
-                  <img src={github} className='github-icon' />
                   <h6>View on Github</h6>
+                  <img src={github} className='github-icon' />
                 </a>
                 <h6>&nbsp; | &nbsp;</h6>
                 <a
@@ -274,8 +274,8 @@ export function SimonModal({ isSimonModalOpen, closeSimonModal }) {
                   target='_blank'
                   className='link-container'
                 >
-                  <img src={github} className='github-icon' />
                   <h6>View on Github</h6>
+                  <img src={github} className='github-icon' />
                 </a>
                 <h6>&nbsp; | &nbsp;</h6>
                 <a
