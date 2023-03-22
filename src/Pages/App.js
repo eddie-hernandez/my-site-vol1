@@ -11,7 +11,7 @@ import Footer from '../Components/Footer/Footer'
 export default function App() {
   // checks if a specific page is in view for navbar to show which page is "active"
   const { ref: topRef, inView: isTopActive } = useInView()
-  const { ref: aboutRef, inView: isAboutActive } = useInView({rootMargin: '100px 0px 0px 0px'})
+  const { ref: aboutRef, inView: isAboutActive } = useInView()
   const { ref: projectRef, inView: isProjectActive } = useInView()
   const { ref: resumeRef, inView: isResumeActive } = useInView()
   const { ref: contactRef, inView: isContactActive } = useInView()

@@ -35,6 +35,10 @@
   color: red;
 }
 
+a.silly-link:hover {
+  text-decoration: none;
+}
+
 .eddie {
   width: 100%;
   max-width: 450px;

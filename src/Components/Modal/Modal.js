@@ -6,6 +6,7 @@ import movieRoyale from '../../Assets/movie-royale.png'
 import simon from '../../Assets/simon.png'
 
 export function SoftwareModal({ isSEModalOpen, closeSEModal }) {
+
   return (
     // CSS TERMINAL CREDIT: https://codepen.io/addyosmani/pen/avxmvN
 
@@ -21,35 +22,44 @@ export function SoftwareModal({ isSEModalOpen, closeSEModal }) {
             $ npm start software-engineering<span className='cursor1'>_</span>
           </p>
           <p className='line2'>
-            When I first began working in Software Engineering, I didn't realize how naturally things would click for me. Recently, I completed a Full-Stack Software Engineering Fellowship at General Assembly. There, I challenged myself to build upon my Software Engineering knowledge and master those skills. I also created some of my favorite projects/applications to date in the fellowship! Feel free to check them out in the projects section.
-            <span className='cursor2'>_</span>
+          When I first began working in Software Engineering, I didn't
           </p>
           <p className='line3'>
-            [?] Looking to collaborate on a project/application? Contact me via the contact section and let's connect! (Press any of the color buttons to exit terminal)
-            <span className='cursor3'>_</span>
+          realize how naturally things would click for me. Recently, I 
           </p>
           <p className='line4'>
-            {`>`}<span className='cursor4'>_</span>
+          completed a Full-Stack Software Engineering Fellowship at 
           </p>
-        </div>
-      </div>
-    </div>
-  )
-}
-
-export function DesignModal({ isDesignModalOpen, closeDesignModal }) {
-  return (
-    <div
-      className={`modal ${isDesignModalOpen ? 'active' : ''}`}
-      id='DesignModal'
-    >
-      <div className='modal-box'>
-        <div className='modal-container'>
-          <span className='close' onClick={closeDesignModal}>
-            &times;
-          </span>
-          <h1>Design</h1>
-          <p>This is the content of the modal.</p>
+          <p className='line5'>
+          General Assembly. There, I challenged myself to build upon my 
+          </p>
+          <p className='line6'>
+          Software Engineering knowledge and master those skills. I 
+          </p>
+          <p className='line7'>
+          also created some of my favorite projects/applications to 
+          </p>
+          <p className='line8'>
+          date in the fellowship! Feel free to check them out in the 
+          </p>
+          <p className='line9'>
+          projects section.
+            <span className='cursor2'>_</span>
+          </p>
+          <p className='line10'>
+            [?] Looking to collaborate on a project/application? Contact
+          </p>
+          <p className='line11'>
+          me via the contact section and let's connect!
+          <span className='cursor3'>_</span>
+          </p>
+          <p className='line12'>
+          (Press any of the color buttons to exit terminal)
+            <span className='cursor4'>_</span>
+          </p>
+          <p className='line13'>
+            {`>`}<span className='cursor5'>_</span>
+          </p>
         </div>
       </div>
     </div>

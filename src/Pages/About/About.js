@@ -23,17 +23,6 @@ export default function Home({ aboutRef }) {
     )
   }
 
-  // Design Modal
-  const [isDesignModalOpen, setIsDesignModalOpen] = useState(false)
-
-  function openDesignModal() {
-    setIsDesignModalOpen(true)
-  }
-
-  function closeDesignModal() {
-    setIsDesignModalOpen(false)
-  }
-
   return (
     <div ref={aboutRef} className='page' id='about-section'>
       <h1>
@@ -75,9 +64,14 @@ export default function Home({ aboutRef }) {
           </h6>
           <h6>and</h6>
           <h2 style={{ marginTop: '-0.25em' }}>
-            <span className='silly-link' onClick={openDesignModal}>
+            <a
+              href='https://brainstation.io/career-guides/what-is-a-ui-designer#:~:text=A%20UI%20Designer%20%E2%80%94%20or%20User,that%20make%20this%20movement%20possible.'
+              target='_blank'
+              className='silly-link'
+              id='skill'
+            >
               UI Designer
-            </span>
+            </a>
           </h2>
           <h6 style={{ marginTop: '-0.25em', marginBottom: '1em' }}>
             (amongst other creative roles)
@@ -88,6 +82,7 @@ export default function Home({ aboutRef }) {
               className='silly-link'
               href='https://www.google.com/maps/place/Brooklyn,+NY/@40.6451594,-74.0850823,11z/data=!3m1!4b1!4m5!3m4!1s0x89c24416947c2109:0x82765c7404007886!8m2!3d40.6781784!4d-73.9441579?shorturl=1'
               target='_blank'
+              id='skill'
             >
               Brooklyn, NY
             </a>
@@ -148,10 +143,6 @@ export default function Home({ aboutRef }) {
       <SoftwareModal
         isSEModalOpen={isSEModalOpen}
         closeSEModal={closeSEModal}
-      />
-      <DesignModal
-        isDesignModalOpen={isDesignModalOpen}
-        closeDesignModal={closeDesignModal}
       />
     </div>
   )
