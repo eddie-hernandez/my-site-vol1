@@ -47,7 +47,16 @@
   }
 
   .navbar {
-    margin: 0em 2em 0em 3em;
+    margin: 0em 2em 0em 2.5em;
     height: auto;
   }
 }
+/* 
+@media screen and (max-width: 800px) {
+  .navbar {
+    background-color: transparent;
+  }
+  .header {
+    background-color: transparent;
+  }
+} */

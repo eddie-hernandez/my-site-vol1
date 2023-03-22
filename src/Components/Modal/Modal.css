@@ -385,35 +385,41 @@ span {
 
 @media screen and (max-width: 1100px) {
   .modal-box {
+    margin: 10% auto;
     width: 75%;
     padding-bottom: 0em;
   }
-
   .modal-photo {
-    max-width: 35em;
-    max-height: 25em;
+    width: 40vh;
+    max-width: 40vh;
+    height: 30vh;
+    max-height: 30vh;
   }
-
   .modal-content {
     display: flex;
     flex-direction: column;
   }
   .modal-container h2 {
-    font-size: 40px;
+    font-size: 30px;
   }
-
-  .modal-text-container h6 {
-    font-size: 18px;
+  .modal-container h4 {
+    font-size: 20px;
+  }
+  .modal-container h6 {
+    font-size: 16px;
+  }
+  .modal-text-container {
+    margin: 1em 1em 2em 1em;
   }
 
   .fakeTerminal p {
     font-size: 12px;
   }
   .fakeMenu {
-    width: 30em;
+    width: 50vh;
   }
   .fakeScreen {
-    width: 30em;
-    height: 20em;
+    width: 50vh;
+    height: 40vh;
   }
 }
