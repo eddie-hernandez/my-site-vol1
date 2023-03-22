@@ -13,16 +13,16 @@
 }
 
 .bio-container {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  margin: 1em 7em 2em 12em;
+  padding: 5em 15em;
+  column-gap: 5em;
 }
 
 .bio {
   display: flex;
   flex-direction: column;
-  margin-left: 13em;
   row-gap: 1em;
 }
 
@@ -33,4 +33,10 @@
 
 .silly-link:hover {
   color: red;
+}
+
+.eddie {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
 }

@@ -1,24 +1,305 @@
-.modal-container {
-  color: black;
-}
-
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Set the opacity of the overlay */
-  z-index: 9999; /* Set the z-index to make sure the overlay is on top of everything else */
-}
-
+/* The Modal (background) */
 .modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Box */
+.modal-box {
+  background-color: #fefefe;
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 2em 2em 3.5em 2em;
+  border: 5px solid black;
+  border-radius: 20px;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.modal-text-container {
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 1em;
+}
+
+.modal-description {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+}
+
+.modal-photo {
+  margin: 1em 0em;
+  height: 25em;
+  max-width: 40em;
+  border: 5px solid black;
+}
+
+.modal-photo:hover {
+  border-color: gold;
+}
+
+.modal-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.link-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1em;
+  cursor: pointer;
+}
+
+.link-container:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.github-icon {
+  height: 3vh;
+}
+
+/* Close Button */
+.close {
+  color: black;
+
+  font-size: 28px;
+  font-weight: bold;
+  display: flex;
+  align-self: flex-end;
+}
+
+.close:hover,
+.close:focus {
+  color: #aaa;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.modal.active {
+  display: block;
+  animation: showModal 0.2s forwards ease-in-out;
+}
+
+/* Software Engineer Modal */
+
+/* CSS TERMINAL CREDIT: https://codepen.io/addyosmani/pen/avxmvN */
+
+.fakeTerminal {
+  display: flex;
+  flex-direction: column;
+  margin: 15% auto;
+}
+
+.fakeButtons {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  position: relative;
+  top: 6px;
+  left: 6px;
+  background-color: #ff3b47;
+  border-color: #9d252b;
+  display: inline-block;
+}
+
+
+.fakeMinimize {
+  left: 11px;
+  background-color: #ffc100;
+  border-color: #9d802c;
+}
+
+.fakeZoom {
+  left: 16px;
+  background-color: #00d742;
+  border-color: #049931;
+}
+
+.fakeButtons:hover {
+  background-color: #ff6771;
+  border-color: #c73940;
+}
+
+.fakeButtons.fakeMinimize:hover {
+  background-color: #fecf45;
+  border-color: #c99700;
+}
+
+.fakeButtons.fakeZoom:hover {
+  background-color: #00ec47;
+  border-color: #00c83c;
+}
+
+.fakeMenu {
+  display: flex;
+  justify-content: flex-start;
+  width: 550px;
+  box-sizing: border-box;
+  height: 25px;
+  background-color: #bbb;
+  margin: 0 auto;
+  padding: 1px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.fakeScreen {
+  background-color: #151515;
+  box-sizing: border-box;
+  width: 550px;
+  margin: 0 auto;
   padding: 20px;
-  z-index: 10000; /* Set the z-index to make sure the modal is on top of the overlay */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add a shadow to the modal */
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+p {
+  position: relative;
+  text-align: left;
+  font-size: 1.25em;
+  font-family: monospace;
+  white-space: normal;
+  overflow: hidden;
+  width: 0;
+}
+
+span {
+  color: #fff;
+  font-weight: bold;
+}
+
+.line1 {
+  color: #9CD9F0;
+  -webkit-animation: type .5s .5s steps(20, end) forwards;
+  animation: type .5s .5s steps(20, end) forwards;
+}
+
+.cursor1 {
+  -webkit-animation: blink 1s 1.25s 3 forwards;
+  animation: blink 1s 1.25s 3 forwards;
+}
+
+.line2 {
+  color: #CDEE69;
+  -webkit-animation: type .5s 4.25s steps(20, end) forwards;
+  animation: type .5s 4.25s steps(20, end) forwards;
+}
+
+.cursor2 {
+  -webkit-animation: blink 1s 5.25s 3 forwards;
+  animation: blink 1s 5.25s 3 forwards;
+}
+
+.line3 {
+  color: #E09690;
+  -webkit-animation: type .5s 8.5s steps(20, end) forwards;
+  animation: type .5s 8.5s steps(20, end) forwards;
+}
+
+.cursor3 {
+  -webkit-animation: blink 1s 9.5s 3 forwards;
+  animation: blink 1s 9.5s 3 forwards;
+}
+
+.line4 {
+  color: #fff;
+  -webkit-animation: type .5s 12.75s steps(20, end) forwards;
+  animation: type .5s 12.75s steps(20, end) forwards;
+}
+
+.cursor4 {
+  -webkit-animation: blink 1s 13.25s infinite;
+  animation: blink 1s 13.25s infinite;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes type {
+  to {
+    width: 30em;
+  }
+}
+
+@keyframes type {
+  to {
+    width: 30em;
+  }
+}
+
+/* Fade in Effect on Modal */
+@keyframes showModal {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes closeModal {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
 }

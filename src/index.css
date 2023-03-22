@@ -18,11 +18,12 @@ html, body, #root, .app {
 html {
   background-color: #f3e2c7;
   color: black;
-  overflow-y: hidden;
-  overflow-x: hidden;
   scroll-behavior: smooth;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0px -8px;
+  height: auto;
 }

@@ -4,10 +4,23 @@
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   row-gap: 2em;
   column-gap: 2em;
-  margin: 2em;
+  padding: 2em;
+}
+
+.projects-text-container {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2em;
+}
+
+.projects-text {
+  max-width: 150vh;
 }
 
 .project {
@@ -17,11 +30,32 @@
   align-items: center;
   row-gap: 1em;
   border: 5px solid black;
-  padding: 2em;
+  padding: 1em;
+  cursor: pointer;
 }
 
 .project-image {
-  width: 35em;
-  height: 25em;
+  width: 35vh;
+  height: 25vh;
   border: 5px solid black;
+}
+
+#noted:hover {
+  background-color: #0033ff;
+  color: yellow;
+}
+
+#lerpr:hover {
+  background-color: #313646;
+  color: white;
+}
+
+#movie-royale:hover {
+  background-color: #A1ADA3;
+  color: #4E3F3F;
+}
+
+#simon:hover {
+  background-color: black;
+  color: white;
 }

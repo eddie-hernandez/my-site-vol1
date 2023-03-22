@@ -6,6 +6,15 @@
   grid-row-gap: 0px;
   margin: 2em 0em;
   text-align: center;
+  position: relative;
+  background-color: #f3e2c7;
+}
+
+.navbar {
+  position: sticky;
+  top: 0px;
+  padding: 0.1em;
+  background-color: #f3e2c7;
 }
 
 .nav-link {
@@ -15,7 +24,7 @@
 
 /* h5 represents nav-link text! */
 
-h5:hover {
+.nav-link h5:hover {
   color: var(--navhover);
   text-decoration: underline;
   cursor: pointer;
@@ -23,9 +32,11 @@ h5:hover {
 
 .nav-active {
   color: blue;
-  text-decoration: underline;
+
 }
 
 .nav-active h5:hover {
   color: var(--activehover);
+  text-decoration: underline;
+  cursor: pointer;
 }

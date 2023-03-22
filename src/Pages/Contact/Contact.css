@@ -1,3 +1,24 @@
 .contact-page {
-  margin-bottom: 1em;
+  margin-top: 20em;
+  margin-bottom: 4em;
+}
+
+.contact-container {
+  padding: 10em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 5em;
+}
+
+.contact-text {
+  max-width: 75vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2em;
+}
+
+.contact-photo {
+  width: 500px;
+  height: 300px;
 }

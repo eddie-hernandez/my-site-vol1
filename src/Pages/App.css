@@ -1,25 +1,18 @@
-.landing-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  height: 100%;
-  overflow-y: scroll;
-}
-
 .app {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   text-align: center;
   height: 100%;
-  overflow-y: scroll;
 }
 
 /* PAGE LAYOUT */
 
 .page {
-  margin-bottom: 3em;
+  padding-top: 7em;
+  margin-bottom: 5em;
+}
+
+.page-header {
+  margin-bottom: 2em;
+  text-decoration: underline;
 }
 
 * {

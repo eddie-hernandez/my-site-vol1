@@ -1,10 +1,6 @@
 import './About.css'
 import { useState } from 'react'
-import {
-  SoftwareModal,
-  DesignModal,
-  DevModal,
-} from '../../Components/Modal/Modal'
+import { SoftwareModal, DesignModal } from '../../Components/Modal/Modal'
 import eddie from '../../Assets/eddie.jpg'
 
 import React from 'react'
@@ -21,15 +17,10 @@ export default function Home({ aboutRef }) {
     setIsSEModalOpen(false)
   }
 
-  // Developer Modal
-  const [isDevModalOpen, setIsDevModalOpen] = useState(false)
-
-  function openDevModal() {
-    setIsDevModalOpen(true)
-  }
-
-  function closeDevModal() {
-    setIsDevModalOpen(false)
+  function handleClickDev() {
+    alert(
+      'As a web developer, I have a lot of fun using my programming resources to the fullest.\n\nBuilding websites and making them fun and interactive are like solving puzzles to me, putting components and pages together is such a joy. I even built this website of mine from scratch!'
+    )
   }
 
   // Design Modal
@@ -45,7 +36,9 @@ export default function Home({ aboutRef }) {
 
   return (
     <div ref={aboutRef} className='page' id='about-section'>
-        <h1><u>About</u></h1>
+      <h1>
+        <u>About</u>
+      </h1>
       <div className='about'>
         <div className='about-container'>
           <h1 style={{ fontFamily: 'Righteous' }}>Eddie Hernandez</h1>
@@ -69,7 +62,7 @@ export default function Home({ aboutRef }) {
             </i>
           </h6>
           <h2>
-            <span className='silly-link' onClick={openDevModal}>
+            <span className='silly-link' onClick={handleClickDev}>
               Web Developer
             </span>
             ,
@@ -83,9 +76,8 @@ export default function Home({ aboutRef }) {
           <h6>and</h6>
           <h2 style={{ marginTop: '-0.25em' }}>
             <span className='silly-link' onClick={openDesignModal}>
-              Multidisciplinary Designer
+              UI Designer
             </span>
-            ,
           </h2>
           <h6 style={{ marginTop: '-0.25em', marginBottom: '1em' }}>
             (amongst other creative roles)
@@ -113,7 +105,9 @@ export default function Home({ aboutRef }) {
         </div>
       </div>
       <div className='bio-container' id='bottom-section'>
-        <img width='450' height='500' src={eddie}></img>
+        <div>
+          <img className='eddie' src={eddie}></img>
+        </div>
         <div className='bio'>
           {/* <h6>
           As a passionate full-stack software engineer, I am dedicated to
@@ -159,7 +153,6 @@ export default function Home({ aboutRef }) {
         isDesignModalOpen={isDesignModalOpen}
         closeDesignModal={closeDesignModal}
       />
-      <DevModal isDevModalOpen={isDevModalOpen} closeDevModal={closeDevModal} />
     </div>
   )
 }

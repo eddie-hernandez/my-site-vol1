@@ -1,6 +1,12 @@
 import './Header.css'
 
-export default function Header({isAboutActive, isContactActive, isProjectActive, isResumeActive, isTopActive}) {
+export default function Header({
+  isAboutActive,
+  isContactActive,
+  isProjectActive,
+  isResumeActive,
+  isTopActive,
+}) {
   // testing with the top
   const top = document.getElementById('landing-page')
   const about = document.getElementById('about-section')
@@ -17,7 +23,7 @@ export default function Header({isAboutActive, isContactActive, isProjectActive,
 
   function scrollToAbout() {
     if (about) {
-      about.scrollIntoView({ behavior: 'smooth'})
+      about.scrollIntoView({ behavior: 'smooth' })
     }
   }
 
@@ -49,25 +55,45 @@ export default function Header({isAboutActive, isContactActive, isProjectActive,
           <h5>Home</h5>
         </div>
         <div
-          className={isTopActive ? 'nav-link' : isAboutActive ? 'nav-active' : 'nav-link'}
+          className={
+            isTopActive ? 'nav-link' : isAboutActive ? 'nav-active' : 'nav-link'
+          }
           onClick={scrollToAbout}
         >
           <h5>About</h5>
         </div>
         <div
-          className={isAboutActive ? 'nav-link' : isProjectActive ? 'nav-active' : 'nav-link'}
+          className={
+            isAboutActive
+              ? 'nav-link'
+              : isProjectActive
+              ? 'nav-active'
+              : 'nav-link'
+          }
           onClick={scrollToProjects}
         >
           <h5>Projects</h5>
         </div>
         <div
-          className={isProjectActive ? 'nav-link' : isResumeActive ? 'nav-active' : 'nav-link'}
+          className={
+            isProjectActive
+              ? 'nav-link'
+              : isResumeActive
+              ? 'nav-active'
+              : 'nav-link'
+          }
           onClick={scrollToResume}
         >
           <h5>Resume/CV</h5>
         </div>
         <div
-          className={isResumeActive ? 'nav-link' : isContactActive ? 'nav-active' : 'nav-link'}
+          className={
+            isResumeActive
+              ? 'nav-link'
+              : isContactActive
+              ? 'nav-active'
+              : 'nav-link'
+          }
           onClick={scrollToContact}
         >
           <h5>Contact</h5>
