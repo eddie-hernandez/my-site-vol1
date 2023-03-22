@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d54dade1.css",
+    "main.js": "/static/js/main.333eee39.js",
+    "static/media/happytower.jpg": "/static/media/happytower.cfd7bdcebbcd5481af29.jpg",
+    "static/media/flare.jpg": "/static/media/flare.b393df90c307aa0df063.jpg",
+    "static/media/movie-royale.png": "/static/media/movie-royale.1c984974fdf15b3cd17a.png",
+    "static/media/eddie.jpg": "/static/media/eddie.3ec6ed4108d49062ba0c.jpg",
+    "static/media/lerpr.png": "/static/media/lerpr.6ba1eb82adb955d05bfc.png",
+    "static/media/noted.png": "/static/media/noted.2ce5aac614e374a2ef1c.png",
+    "static/media/noted2.png": "/static/media/noted2.697662af4b9f8bc8295a.png",
+    "static/media/simon.png": "/static/media/simon.c9502c44347a15f3dec4.png",
+    "index.html": "/index.html",
+    "main.d54dade1.css.map": "/static/css/main.d54dade1.css.map",
+    "main.333eee39.js.map": "/static/js/main.333eee39.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d54dade1.css",
+    "static/js/main.333eee39.js"
+  ]
+}
