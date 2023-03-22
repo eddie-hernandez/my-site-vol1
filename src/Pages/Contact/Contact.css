@@ -1,14 +1,12 @@
-.contact-page {
-  margin-top: 20em;
-  margin-bottom: 4em;
+#contact-section {
+  margin-top: 15em;
 }
 
 .contact-container {
-  padding: 10em;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  column-gap: 5em;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+margin: 11em 0em;
 }
 
 .contact-text {
@@ -19,6 +17,22 @@
 }
 
 .contact-photo {
-  width: 500px;
-  height: 300px;
+  width: 30em;
+  height: 20em;
+}
+
+@media screen and (max-width: 1100px) {
+  .contact-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .contact-container {
+    flex-direction: column;
+    row-gap: 2em;
+  }
+  .contact-photo {
+  max-width: 400px;
+  }
 }

@@ -382,3 +382,38 @@ span {
     opacity: 0;
   }
 }
+
+@media screen and (max-width: 1100px) {
+  .modal-box {
+    width: 75%;
+    padding-bottom: 0em;
+  }
+
+  .modal-photo {
+    max-width: 35em;
+    max-height: 25em;
+  }
+
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .modal-container h2 {
+    font-size: 40px;
+  }
+
+  .modal-text-container h6 {
+    font-size: 18px;
+  }
+
+  .fakeTerminal p {
+    font-size: 12px;
+  }
+  .fakeMenu {
+    width: 30em;
+  }
+  .fakeScreen {
+    width: 30em;
+    height: 20em;
+  }
+}

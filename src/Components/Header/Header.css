@@ -1,10 +1,7 @@
 .header {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  margin: 2em 0em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   text-align: center;
   position: relative;
   background-color: #f3e2c7;
@@ -13,7 +10,7 @@
 .navbar {
   position: sticky;
   top: 0px;
-  padding: 0.1em;
+  padding: 1em;
   background-color: #f3e2c7;
 }
 
@@ -32,11 +29,25 @@
 
 .nav-active {
   color: blue;
-
 }
 
 .nav-active h5:hover {
   color: var(--activehover);
   text-decoration: underline;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1100px) {
+  .header {
+    margin-top: 0em;
+    column-gap: 1em;
+  }
+  .header h5 {
+    font-size: 20px;
+  }
+
+  .navbar {
+    margin: 0em 2em 0em 3em;
+    height: auto;
+  }
 }

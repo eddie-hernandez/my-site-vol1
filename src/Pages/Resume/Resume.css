@@ -4,3 +4,11 @@
   width: 55vh;
   border: 0px;
 }
+
+@media screen and (max-width: 800px) {
+  .resume {
+    margin-top: 5em;
+    height: 60vh;
+    width: 47vh;
+  }
+}

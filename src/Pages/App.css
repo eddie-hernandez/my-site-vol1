@@ -56,3 +56,9 @@ p {
   font-size: 12px;
   font-family: 'Hanken Grotesk', sans-serif;
 }
+
+@media screen and (max-width: 800px) {
+  .page {
+    margin: 0em 2em 4em 3em;
+  }
+}

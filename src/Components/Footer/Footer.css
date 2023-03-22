@@ -1,10 +1,8 @@
 .footer {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  padding-bottom: 2em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 1em;
 }
 
 a {
@@ -15,4 +13,13 @@ a {
 a:hover {
   color: var(--navhover);
   text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    margin: 0em 2em 0em 3em;
+  }
+  .footer h5 {
+    font-size: 20px;
+  }
 }

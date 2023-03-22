@@ -13,14 +13,14 @@
 }
 
 .bio-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  margin-top: 5em;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 5em 15em;
-  column-gap: 5em;
 }
 
 .bio {
+  max-width: 75vh;
   display: flex;
   flex-direction: column;
   row-gap: 1em;
@@ -41,6 +41,26 @@ a.silly-link:hover {
 
 .eddie {
   width: 100%;
-  max-width: 450px;
+  max-width: 30em;
   height: auto;
+}
+
+.video-container {
+  width: fit-content;
+}
+
+.video {
+  width: 30em;
+  height: 30em;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .about {
+    flex-direction: column;
+  }
+  .bio-container {
+    flex-direction: column;
+    row-gap: 2em;
+  }
 }

@@ -91,8 +91,7 @@ export default function Home({ aboutRef }) {
         <div className='video-container'>
           <iframe
             src='https://player.vimeo.com/video/809903136?background=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
-            width='500'
-            height='500'
+            className='video'
             frameBorder='0'
             allow='autoplay'
             title='Acadia Soundscape'

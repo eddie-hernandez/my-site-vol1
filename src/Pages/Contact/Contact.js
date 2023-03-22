@@ -3,7 +3,7 @@ import happytower from '../../Assets/happytower.jpg'
 
 export default function Contact({ contactRef }) {
   return (
-    <div ref={contactRef} className='contact-page' id='contact-section'>
+    <div ref={contactRef} className='page' id='contact-section'>
       <h1>
         <u>Contact</u>
       </h1>
