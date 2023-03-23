@@ -12,3 +12,12 @@
     width: 47vh;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .resume {
+    margin-top: 5em;
+    height: 60vh;
+    width: 47vh;
+  }
+}
+

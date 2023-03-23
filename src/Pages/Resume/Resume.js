@@ -8,7 +8,11 @@ export default function Resume({ resumeRef }) {
       <h1>
         <u>Resume/CV</u>
       </h1>
-      <iframe src="https://drive.google.com/file/d/1AGSpys128shdNDyNqjW_VOBHNtYcpIjQ/preview" className='resume' title='resume'></iframe>
+      <iframe
+        src="https://drive.google.com/file/d/1A7ZbXJSHHNjLgRRHwypzxs-byy7k2raP/preview"
+        className='resume'
+        title='resume'
+      ></iframe>
     </div>
   )
 }
