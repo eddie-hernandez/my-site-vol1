@@ -84,7 +84,7 @@ export default function Header({
           }
           onClick={scrollToResume}
         >
-          <h5>Resume/CV</h5>
+          <h5>Resume</h5>
         </div>
         <div
           className={

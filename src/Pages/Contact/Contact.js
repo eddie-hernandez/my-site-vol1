@@ -17,7 +17,7 @@ export default function Contact({ contactRef }) {
           </h6>
         </div>
         <div>
-          <img className='contact-photo' src={happytower}></img>
+          <img className='contact-photo' alt='happy tower' src={happytower}></img>
         </div>
       </div>
     </div>

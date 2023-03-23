@@ -65,14 +65,10 @@ export default function Projects({ projectRef }) {
       </h1>
       <div className='projects-text-container'>
         <h6 className='projects-text'>
-          Throughout my career as a software engineer, I have designed and
-          developed numerous projects both collaboratively and independently.
-          With each project, I have pushed myself to learn new programming
-          languages, frameworks, and developer tools.
+        Every project I've designed and developed I see as an opportunity for me to expand my horizons and push the boundaries of what is possible in the realm of software engineering. By continuously seeking out and mastering new programming languages, frameworks, and developer tools, I have honed my skills and expertise to become a well-rounded and versatile software engineer capable of tackling any challenge with confidence and creativity.
         </h6>
         <h6 className='projects-text'>
-          The following applications highlight some of my favorites of the
-          projects I've created:
+        These are some of my most beloved software applications, some designed and developed independently and others in collaboration with some of the <a href='https://scottank.github.io/lerpr/#/team' className='silly-link' target='_blank' rel='noreferrer'>brightest minds in the industry</a>:
         </h6>
       </div>
       <div className='projects-container'>

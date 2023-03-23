@@ -13,11 +13,11 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .resume {
     margin-top: 5em;
-    height: 60vh;
-    width: 47vh;
+    height: 48vh;
+    width: 38vh;
   }
 }
 

@@ -1,6 +1,6 @@
 import './About.css'
 import { useState } from 'react'
-import { SoftwareModal, DesignModal } from '../../Components/Modal/Modal'
+import { SoftwareModal } from '../../Components/Modal/Modal'
 import eddie from '../../Assets/eddie.jpg'
 
 import React from 'react'
@@ -17,9 +17,9 @@ export default function Home({ aboutRef }) {
     setIsSEModalOpen(false)
   }
 
-  function handleClickDev() {
+  function handleClickUI() {
     alert(
-      'As a web developer, I have a lot of fun using my programming resources to the fullest.\n\nBuilding websites and making them fun and interactive are like solving puzzles to me, putting components and pages together is such a joy. I even built this website of mine from scratch!'
+      `As a skilled UI designer, I find immense pleasure in utilizing my programming knowledge to the fullest extent possible. Building websites and infusing them with elements of interactivity is akin to a puzzle – and I love a good puzzle!\n\nI even took on the challenge of building my own website from scratch (you're on it right now!), which was an incredibly rewarding experience.`
     )
   }
 
@@ -32,11 +32,8 @@ export default function Home({ aboutRef }) {
         <div className='about-container'>
           <h1 style={{ fontFamily: 'Righteous' }}>Eddie Hernandez</h1>
           <h6>is a</h6>
-          <h2>
-            <span className='silly-link' onClick={openSEModal}>
-              Software Engineer
-            </span>
-            ,
+          <h2 className='silly-link' onClick={openSEModal}>
+            Software Engineer
           </h2>
           <h6>
             Advanced in:{' '}
@@ -44,44 +41,34 @@ export default function Home({ aboutRef }) {
               JavaScript, Node.js, Express.js, MongoDB, Mongoose
             </i>
           </h6>
-          <h6 style={{ marginBottom: '0.5em' }}>
+          <h6 style={{ marginBottom: '1vh' }}>
             Proficient in:{' '}
             <i style={{ color: 'var(--skills)' }}>
               Python, Django, SQL, PostgreSQL
             </i>
           </h6>
-          <h2>
-            <span className='silly-link' onClick={handleClickDev}>
-              Web Developer
-            </span>
-            ,
+          <h6>and</h6>
+          <h2
+            style={{ marginTop: '-0.5vh' }}
+            onClick={handleClickUI}
+            className='silly-link'
+            id='skill'
+          >
+            UI Designer
           </h2>
-          <h6 style={{ marginBottom: '0.5em' }}>
+          <h6 style={{ marginBottom: '1vh' }}>
             Advanced in:{' '}
             <i style={{ color: 'var(--skills)' }}>
               React, HTML, CSS, Bootstrap
             </i>
           </h6>
-          <h6>and</h6>
-          <h2 style={{ marginTop: '-0.25em' }}>
-            <a
-              href='https://brainstation.io/career-guides/what-is-a-ui-designer#:~:text=A%20UI%20Designer%20%E2%80%94%20or%20User,that%20make%20this%20movement%20possible.'
-              target='_blank'
-              className='silly-link'
-              id='skill'
-            >
-              UI Designer
-            </a>
-          </h2>
-          <h6 style={{ marginTop: '-0.25em', marginBottom: '1em' }}>
-            (amongst other creative roles)
-          </h6>
           <h6>based in</h6>
-          <h2 style={{ marginTop: '-0.25em' }}>
+          <h2 style={{ marginTop: '-0.5vh' }}>
             <a
               className='silly-link'
               href='https://www.google.com/maps/place/Brooklyn,+NY/@40.6451594,-74.0850823,11z/data=!3m1!4b1!4m5!3m4!1s0x89c24416947c2109:0x82765c7404007886!8m2!3d40.6781784!4d-73.9441579?shorturl=1'
               target='_blank'
+              rel='noreferrer'
               id='skill'
             >
               Brooklyn, NY
@@ -100,7 +87,11 @@ export default function Home({ aboutRef }) {
       </div>
       <div className='bio-container' id='bottom-section'>
         <div>
-          <img className='eddie' src={eddie}></img>
+          <img
+            className='eddie'
+            alt='eddie on top of cadillac mtn'
+            src={eddie}
+          ></img>
         </div>
         <div className='bio'>
           {/* <h6>
@@ -129,7 +120,7 @@ export default function Home({ aboutRef }) {
             Now, as a software engineer, I apply these same skills to building
             cutting-edge software solutions that meet the needs of today's
             digital landscape. Whether I'm working in a musical or visual
-            environemnt, or developing a website or app, I approach each project
+            environment, or developing a website or app, I approach each project
             with the same level of creativity, attention to detail, and
             commitment to excellence that I brought to my work in television and
             music production. With a deep understanding of both the creative and

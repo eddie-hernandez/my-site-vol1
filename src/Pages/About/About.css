@@ -41,7 +41,7 @@ a.silly-link:hover {
 
 .eddie {
   width: 100%;
-  max-width: 30em;
+  max-width: 60vh;
   height: auto;
 }
 
@@ -61,6 +61,6 @@ a.silly-link:hover {
   }
   .bio-container {
     flex-direction: column;
-    row-gap: 2em;
+    row-gap: 4vh;
   }
 }
