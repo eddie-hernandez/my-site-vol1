@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding-bottom: 1em;
+  padding-bottom: 2vh;
   width: 100%;
 }
 
@@ -16,9 +16,9 @@ a:hover {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
   .footer h5 {
-    font-size: 2vh;
+    font-size: 1.75vh;
   }
   .footer {
     padding-bottom: 6vh;

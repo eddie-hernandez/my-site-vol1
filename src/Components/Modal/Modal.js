@@ -83,7 +83,7 @@ export function NotedModal({ isNotedModalOpen, closeNotedModal }) {
           <h2>Noted</h2>
           <div className='modal-content'>
             <div className='modal-photo-container'>
-              <a href='https://noted.world' target='_blank' rel="noreferrer">
+              <a href='https://noted.world' target='_blank' rel='noreferrer'>
                 <img src={noted2} alt='noted app' className='modal-photo' />
               </a>
             </div>
@@ -95,36 +95,38 @@ export function NotedModal({ isNotedModalOpen, closeNotedModal }) {
                   </i>
                 </h4>
                 <h6>
-                  Noted is a record tracker application where users can sign-up
-                  for an account and log any album into their record collection.
+                  A minimal record tracker application where users can sign up
+                  for an account and build a digital record collection. A user
+                  is able to CRUD on the ‘record’ model with any album
+                  information (release date, artist/band name, album title) and
+                  its sub-document, the ‘liner note’ (album rating, ‘standout
+                  track’, personal thoughts).
                 </h6>
                 <h6>
-                  Users can add album details, and upon first listen, can add
-                  their rating of the album, a 'standout track', and additional
-                  thoughts via the 'liner notes' feature.
+                In addition to its core functionality, Noted, which is currently in Version 2, now includes: the 'Standout Mix', which compiles a users' 'standout tracks' into one playlist, and a 'Record of the Month' feature, which provides users with a handpicked album recommendation from yours truly. 
                 </h6>
               </div>
             </div>
             <div className='modal-links'>
-                <a
-                  href='https://github.com/eddie-hernandez/recd-recs-tracker-client'
-                  rel="noreferrer"
-                  target='_blank'
-                  className='link-container'
-                >
-                  <h6>View on Github</h6>
-                  <img src={github} alt='github icon' className='github-icon' />
-                </a>
-                <h6>&nbsp; | &nbsp;</h6>
-                <a
-                  href='https://noted.world'
-                  rel="noreferrer"
-                  target='_blank'
-                  className='link-container'
-                >
-                  <h6>Noted Website</h6>
-                </a>
-              </div>
+              <a
+                href='https://github.com/eddie-hernandez/recd-recs-tracker-client'
+                rel='noreferrer'
+                target='_blank'
+                className='link-container'
+              >
+                <h6>View on Github</h6>
+                <img src={github} alt='github icon' className='github-icon' />
+              </a>
+              <h6>&nbsp; | &nbsp;</h6>
+              <a
+                href='https://noted.world'
+                rel='noreferrer'
+                target='_blank'
+                className='link-container'
+              >
+                <h6>Noted Website</h6>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -146,7 +148,11 @@ export function LerprModal({ isLerprModalOpen, closeLerprModal }) {
           <h2>Lerpr</h2>
           <div className='modal-content'>
             <div className='modal-photo-container'>
-              <a href='https://scottank.github.io/lerpr/' rel="noreferrer" target='_blank'>
+              <a
+                href='https://scottank.github.io/lerpr/'
+                rel='noreferrer'
+                target='_blank'
+              >
                 <img src={lerpr} alt='lerpr app' className='modal-photo' />
               </a>
             </div>
@@ -158,35 +164,45 @@ export function LerprModal({ isLerprModalOpen, closeLerprModal }) {
                   </i>
                 </h4>
                 <h6>
-                  Lerpr is a sandbox application that demonstrates how bézier
-                  curves can manipulate lines based on an x/y grid.
+                  Lerpr is an innovative sandbox application that showcases the
+                  power of bézier curves in manipulating lines based on an x/y
+                  grid. With its easy-to-use CRUD functionality, users can
+                  create, read, update and delete their own sandboxes, allowing
+                  for endless experimentation and creativity. Users also have
+                  the opportunity to view and duplicate a copy of sandboxes
+                  created by other Lerpr users via the community page.
                 </h6>
                 <h6>
-                  Users have the ability to CRUD their own sandboxes as well as
-                  view other users' creations via the Community Sandboxes page.
+                  As Lerpr's UI Designer, I created a seamless communication
+                  system between client-side data input and server-side API
+                  routes, ensuring that the app was highly responsive and always
+                  performing at optimal levels. In addition to my technical
+                  skills, I leveraged my creativity and design skills to create
+                  a visually stunning and highly intuitive user interface using
+                  React, JavaScript, and CSS.
                 </h6>
               </div>
             </div>
             <div className='modal-links'>
-                <a
-                  href='https://github.com/ScottAnk/lerpr'
-                  target='_blank'
-                  rel="noreferrer"
-                  className='link-container'
-                >
-                  <h6>View on Github</h6>
-                  <img src={github} alt='github icon' className='github-icon' />
-                </a>
-                <h6>&nbsp; | &nbsp;</h6>
-                <a
-                  href='https://scottank.github.io/lerpr/'
-                  target='_blank'
-                  rel="noreferrer"
-                  className='link-container'
-                >
-                  <h6>Lerpr Website</h6>
-                </a>
-              </div>
+              <a
+                href='https://github.com/ScottAnk/lerpr'
+                target='_blank'
+                rel='noreferrer'
+                className='link-container'
+              >
+                <h6>View on Github</h6>
+                <img src={github} alt='github icon' className='github-icon' />
+              </a>
+              <h6>&nbsp; | &nbsp;</h6>
+              <a
+                href='https://scottank.github.io/lerpr/'
+                target='_blank'
+                rel='noreferrer'
+                className='link-container'
+              >
+                <h6>Lerpr Website</h6>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -213,7 +229,11 @@ export function MovieModal({ isMovieModalOpen, closeMovieModal }) {
                 target='_blank'
                 rel='noreferrer'
               >
-                <img src={movieRoyale} alt='movie royale app' className='modal-photo' />
+                <img
+                  src={movieRoyale}
+                  alt='movie royale app'
+                  className='modal-photo'
+                />
               </a>
             </div>
             <div className='modal-text-container'>
@@ -224,36 +244,43 @@ export function MovieModal({ isMovieModalOpen, closeMovieModal }) {
                   </i>
                 </h4>
                 <h6>
-                  Movie Royale aims to answer the ever-dreading question: "what
-                  are we watching tonight?"
+                  Movie Royale provides a fun and hassle-free solution to the
+                  age-old problem of deciding on what movie to watch for the
+                  night. By creating a virtual room and sharing a unique code
+                  with their friends, users can easily gather their loved ones
+                  and collectively vote on a movie. To elevate the user
+                  experience, Movie Royale incorporates WebSocket technology,
+                  enabling users to witness real-time updates as other users
+                  make movie recommendations and upvote/downvote decisions.
                 </h6>
                 <h6>
-                  Users can create a room, share a unique room code with their
-                  friends, and together, vote on a movie to watch for a
-                  hypothetical movie night.
+                  As the UI Designer for Movie Royale, I utilized React's full
+                  potential to enhance user experience by designing visually
+                  appealing and highly functional cards for each movie sourced
+                  from our carefully selected external movie API.
                 </h6>
               </div>
             </div>
             <div className='modal-links'>
-                <a
-                  href='https://github.com/ScottAnk/movie-royale'
-                  rel='noreferrer'
-                  target='_blank'
-                  className='link-container'
-                >
-                  <h6>View on Github</h6>
-                  <img src={github} alt='github icon' className='github-icon' />
-                </a>
-                <h6>&nbsp; | &nbsp;</h6>
-                <a
-                  href='https://movie-royale-client.onrender.com/'
-                  rel='noreferrer'
-                  target='_blank'
-                  className='link-container'
-                >
-                  <h6>Movie Royale Website</h6>
-                </a>
-              </div>
+              <a
+                href='https://github.com/ScottAnk/movie-royale'
+                rel='noreferrer'
+                target='_blank'
+                className='link-container'
+              >
+                <h6>View on Github</h6>
+                <img src={github} alt='github icon' className='github-icon' />
+              </a>
+              <h6>&nbsp; | &nbsp;</h6>
+              <a
+                href='https://movie-royale-client.onrender.com/'
+                rel='noreferrer'
+                target='_blank'
+                className='link-container'
+              >
+                <h6>Movie Royale Website</h6>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -291,37 +318,43 @@ export function SimonModal({ isSimonModalOpen, closeSimonModal }) {
                   </i>
                 </h4>
                 <h6>
-                  Simon (Ambient Edition) is a static web game made using
-                  Vanilla JavaScript, HTML, and CSS. This version stays true to
-                  the original handheld game in play, with the main caveat being
-                  the serene sound effects of the colored buttons.
+                  My first-ever application is a minimal version of the popular
+                  memory game "Simon". I created this front-end application in
+                  order to demonstrate my proficiency in HTML, CSS, and
+                  JavaScript. This version stays true to the original handheld
+                  game in play, with the main caveat being the serene sound
+                  effects of the colored buttons.
                 </h6>
                 <h6>
-                  It was a great joy to implement my skills in music production
-                  to create the soundboard for the game using Logic Pro X.
+                  To pay my respects to my music production background, I
+                  naturally created all original sounds for the game using Logic
+                  Pro X. The game is currently in Version 2, and has recently
+                  been updated to include an earth color theme which can be
+                  switched on/off at any point. Try to make it through ten
+                  levels in order to win the game!
                 </h6>
               </div>
             </div>
             <div className='modal-links'>
-                <a
-                  href='https://github.com/eddie-hernandez/simon-ambient-edition'
-                  rel='noreferrer'
-                  target='_blank'
-                  className='link-container'
-                >
-                  <h6>View on Github</h6>
-                  <img src={github} alt='github icon' className='github-icon' />
-                </a>
-                <h6>&nbsp; | &nbsp;</h6>
-                <a
-                  href='https://eddie-hernandez.github.io/simon-ambient-edition/'
-                  rel='noreferrer'
-                  target='_blank'
-                  className='link-container'
-                >
-                  <h6>Simon Website</h6>
-                </a>
-              </div>
+              <a
+                href='https://github.com/eddie-hernandez/simon-ambient-edition'
+                rel='noreferrer'
+                target='_blank'
+                className='link-container'
+              >
+                <h6>View on Github</h6>
+                <img src={github} alt='github icon' className='github-icon' />
+              </a>
+              <h6>&nbsp; | &nbsp;</h6>
+              <a
+                href='https://eddie-hernandez.github.io/simon-ambient-edition/'
+                rel='noreferrer'
+                target='_blank'
+                className='link-container'
+              >
+                <h6>Simon Website</h6>
+              </a>
+            </div>
           </div>
         </div>
       </div>

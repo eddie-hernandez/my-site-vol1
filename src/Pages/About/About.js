@@ -31,7 +31,7 @@ export default function Home({ aboutRef }) {
       <div className='about'>
         <div className='about-container'>
           <h1 style={{ fontFamily: 'Righteous' }}>Eddie Hernandez</h1>
-          <h6>is a</h6>
+          <h6 className='isa'>is a</h6>
           <h2 className='silly-link' onClick={openSEModal}>
             Software Engineer
           </h2>

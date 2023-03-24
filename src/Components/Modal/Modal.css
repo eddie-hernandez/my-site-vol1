@@ -55,7 +55,6 @@
 
 .modal-photo {
   width: 100%;
-  max-width: 200vh;
   height: auto;
   border: 5px solid black;
 }
@@ -390,6 +389,9 @@ span {
 }
 
 @media screen and (max-width: 1500px) {
+  .modal-box {
+    margin: 3% auto;
+  }
   .fakeTerminal {
     margin: 10% auto;
   }
@@ -437,12 +439,12 @@ span {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .modal-container h2 {
     font-size: 25px;
   }
   .modal-photo {
-    width: 35vh;
-    height: 25vh;
+    width: 30vh;
+    height: 20vh;
   }
 }

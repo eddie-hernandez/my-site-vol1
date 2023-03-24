@@ -13,13 +13,16 @@ margin: 18vh 0vh;
 }
 
 .contact-photo {
-  width: 50vh;
+  width: 60vh;
   height: 40vh;
 }
 
 @media screen and (max-width: 1500px) {
   .contact-container {
-    margin: 14vh 0vh;
+    margin: 12vh 0vh;
+  }
+  .contact-text {
+    max-width: 50vh;
   }
 }
 
@@ -32,10 +35,17 @@ margin: 18vh 0vh;
 @media screen and (max-width: 1100px) {
   .contact-container {
     flex-direction: column;
-    row-gap: 2em;
-    margin: 5em 0em;
+    row-gap: 4vh;
+    margin: 5vh 0vh;
   }
   .contact-photo {
-  max-width: 400px;
+    max-width: 40vh;
+    max-height: 25vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #contact-section.page {
+    margin-top: 12vh;
   }
 }
