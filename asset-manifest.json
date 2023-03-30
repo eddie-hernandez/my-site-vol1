@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.e6752398.css",
+    "main.css": "/static/css/main.bef5b725.css",
     "main.js": "/static/js/main.e976cbb8.js",
     "static/media/happytower.jpg": "/static/media/happytower.cfd7bdcebbcd5481af29.jpg",
     "static/media/flare.jpg": "/static/media/flare.b393df90c307aa0df063.jpg",
@@ -11,11 +11,11 @@
     "static/media/noted2.png": "/static/media/noted2.3e8508221fdeb9a57587.png",
     "static/media/simon.png": "/static/media/simon.c9502c44347a15f3dec4.png",
     "index.html": "/index.html",
-    "main.e6752398.css.map": "/static/css/main.e6752398.css.map",
+    "main.bef5b725.css.map": "/static/css/main.bef5b725.css.map",
     "main.e976cbb8.js.map": "/static/js/main.e976cbb8.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6752398.css",
+    "static/css/main.bef5b725.css",
     "static/js/main.e976cbb8.js"
   ]
 }
