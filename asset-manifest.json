@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bef5b725.css",
-    "main.js": "/static/js/main.e976cbb8.js",
+    "main.css": "/static/css/main.ddd7d966.css",
+    "main.js": "/static/js/main.7a057d87.js",
     "static/media/happytower.jpg": "/static/media/happytower.cfd7bdcebbcd5481af29.jpg",
     "static/media/flare.jpg": "/static/media/flare.b393df90c307aa0df063.jpg",
     "static/media/movie-royale.png": "/static/media/movie-royale.1c984974fdf15b3cd17a.png",
@@ -11,11 +11,11 @@
     "static/media/noted2.png": "/static/media/noted2.3e8508221fdeb9a57587.png",
     "static/media/simon.png": "/static/media/simon.c9502c44347a15f3dec4.png",
     "index.html": "/index.html",
-    "main.bef5b725.css.map": "/static/css/main.bef5b725.css.map",
-    "main.e976cbb8.js.map": "/static/js/main.e976cbb8.js.map"
+    "main.ddd7d966.css.map": "/static/css/main.ddd7d966.css.map",
+    "main.7a057d87.js.map": "/static/js/main.7a057d87.js.map"
   },
   "entrypoints": [
-    "static/css/main.bef5b725.css",
-    "static/js/main.e976cbb8.js"
+    "static/css/main.ddd7d966.css",
+    "static/js/main.7a057d87.js"
   ]
 }
