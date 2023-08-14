@@ -1,7 +1,7 @@
 {
   "name": "eddie-hernandez-portfolio",
   "version": "0.1.0",
-  "homepage": "https://eddiehernandez.page",
+  "homepage": "https://eddie.works",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
