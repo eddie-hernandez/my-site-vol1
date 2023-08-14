@@ -19,7 +19,7 @@ margin: 14vh 0vh;
 
 @media screen and (max-width: 1500px) {
   .contact-container {
-    margin: 12vh 0vh;
+    margin: 8vh 0vh;
   }
   .contact-text {
     max-width: 50vh;
