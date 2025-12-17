@@ -1,6 +1,6 @@
-import './Resume.css'
+import "./Resume.css";
 
-import React from 'react'
+import React from "react";
 
 export default function Resume({ resumeRef }) {
   return (
@@ -11,8 +11,7 @@ export default function Resume({ resumeRef }) {
       <iframe
         src="https://drive.google.com/file/d/1C6Pg-n1sy0K4b6N39wy4ejdakdwd76Q2/preview"
         className="resume"
-        title="resume"
-      ></iframe>
+        title="resume"></iframe>
     </div>
-  )
+  );
 }
