@@ -1,6 +1,5 @@
-import React from 'react'
-import './Home.css'
-import ScrollDown from '../../Components/ScrollDown/ScrollDown'
+import "./Home.css";
+import ScrollDown from "../../Components/ScrollDown/ScrollDown";
 
 export default function Home({ topRef }) {
   return (
@@ -14,5 +13,5 @@ export default function Home({ topRef }) {
         <ScrollDown />
       </div>
     </>
-  )
+  );
 }

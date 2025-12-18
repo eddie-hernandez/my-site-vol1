@@ -1,7 +1,5 @@
 import "./Resume.css";
 
-import React from "react";
-
 export default function Resume({ resumeRef }) {
   return (
     <div ref={resumeRef} className="page" id="resume-section">
