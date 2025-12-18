@@ -24,37 +24,37 @@
 
 h1 {
   font-size: 60px;
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 h2 {
   font-size: 48px;
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 h3 {
   font-size: 36px;
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 h4 {
   font-size: 28px;
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 h5 {
   font-size: 24px;
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 h6 {
   font-size: 2vh;
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 p {
   font-size: 12px;
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 @media screen and (max-width: 800px) {

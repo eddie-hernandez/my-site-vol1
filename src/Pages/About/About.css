@@ -54,7 +54,6 @@ a.silly-link:hover {
   height: 50vh;
 }
 
-
 @media screen and (max-width: 1200px) {
   .about {
     flex-direction: column;

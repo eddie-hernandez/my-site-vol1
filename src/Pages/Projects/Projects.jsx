@@ -1,61 +1,61 @@
-import './Projects.css'
-import { useState } from 'react'
+import "./Projects.css";
+import { useState } from "react";
 import {
   NotedModal,
   LerprModal,
   MovieModal,
   SimonModal,
-} from '../../Components/Modal/Modal'
+} from "../../Components/Modal/Modal";
 
 // image assets
-import noted from '../../Assets/noted.png'
-import lerpr from '../../Assets/lerpr.png'
-import simon from '../../Assets/simon.png'
-import movieRoyale from '../../Assets/movie-royale.png'
+import noted from "../../Assets/noted.png";
+import lerpr from "../../Assets/lerpr.png";
+import simon from "../../Assets/simon.png";
+import movieRoyale from "../../Assets/movie-royale.png";
 
 export default function Projects({ projectRef }) {
   // Noted Modal
-  const [isNotedModalOpen, setIsNotedModalOpen] = useState(false)
+  const [isNotedModalOpen, setIsNotedModalOpen] = useState(false);
 
   function openNotedModal() {
-    setIsNotedModalOpen(true)
+    setIsNotedModalOpen(true);
   }
 
   function closeNotedModal() {
-    setIsNotedModalOpen(false)
+    setIsNotedModalOpen(false);
   }
 
   // Lerpr Modal
-  const [isLerprModalOpen, setIsLerprModalOpen] = useState(false)
+  const [isLerprModalOpen, setIsLerprModalOpen] = useState(false);
 
   function openLerprModal() {
-    setIsLerprModalOpen(true)
+    setIsLerprModalOpen(true);
   }
 
   function closeLerprModal() {
-    setIsLerprModalOpen(false)
+    setIsLerprModalOpen(false);
   }
 
   // Movie Royale Modal
-  const [isMovieModalOpen, setIsMovieModalOpen] = useState(false)
+  const [isMovieModalOpen, setIsMovieModalOpen] = useState(false);
 
   function openMovieModal() {
-    setIsMovieModalOpen(true)
+    setIsMovieModalOpen(true);
   }
 
   function closeMovieModal() {
-    setIsMovieModalOpen(false)
+    setIsMovieModalOpen(false);
   }
 
   // Simon Modal
-  const [isSimonModalOpen, setIsSimonModalOpen] = useState(false)
+  const [isSimonModalOpen, setIsSimonModalOpen] = useState(false);
 
   function openSimonModal() {
-    setIsSimonModalOpen(true)
+    setIsSimonModalOpen(true);
   }
 
   function closeSimonModal() {
-    setIsSimonModalOpen(false)
+    setIsSimonModalOpen(false);
   }
 
   return (
@@ -76,13 +76,12 @@ export default function Projects({ projectRef }) {
         <h6 className="projects-text">
           These are some of my most beloved software applications, some designed
           and developed independently and others in collaboration with some of
-          the{' '}
+          the{" "}
           <a
             href="https://scottank.github.io/lerpr/#/team"
             className="silly-link"
             target="_blank"
-            rel="noreferrer"
-          >
+            rel="noreferrer">
             brightest minds in the industry
           </a>
           :
@@ -135,5 +134,5 @@ export default function Projects({ projectRef }) {
         closeSimonModal={closeSimonModal}
       />
     </div>
-  )
+  );
 }

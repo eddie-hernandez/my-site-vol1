@@ -1,94 +1,92 @@
-import './Modal.css'
-import github from '../../Assets/github-icon.png'
-import noted2 from '../../Assets/noted2.png'
-import lerpr from '../../Assets/lerpr.png'
-import movieRoyale from '../../Assets/movie-royale.png'
-import simon from '../../Assets/simon.png'
+import "./Modal.css";
+import github from "../../Assets/github-icon.png";
+import noted2 from "../../Assets/noted2.png";
+import lerpr from "../../Assets/lerpr.png";
+import movieRoyale from "../../Assets/movie-royale.png";
+import simon from "../../Assets/simon.png";
 
 export function SoftwareModal({ isSEModalOpen, closeSEModal }) {
   return (
     // CSS TERMINAL CREDIT: https://codepen.io/addyosmani/pen/avxmvN
 
-    <div className={`modal ${isSEModalOpen ? 'active' : ''}`} id='SEModal'>
-      <div className='fakeTerminal'>
-        <div className='fakeMenu'>
-          <div className='fakeButtons fakeClose' onClick={closeSEModal}></div>
+    <div className={`modal ${isSEModalOpen ? "active" : ""}`} id="SEModal">
+      <div className="fakeTerminal">
+        <div className="fakeMenu">
+          <div className="fakeButtons fakeClose" onClick={closeSEModal}></div>
           <div
-            className='fakeButtons fakeMinimize'
-            onClick={closeSEModal}
-          ></div>
-          <div className='fakeButtons fakeZoom' onClick={closeSEModal}></div>
+            className="fakeButtons fakeMinimize"
+            onClick={closeSEModal}></div>
+          <div className="fakeButtons fakeZoom" onClick={closeSEModal}></div>
         </div>
-        <div className='fakeScreen'>
-          <p className='line1'>
-            $ npm start software-engineering<span className='cursor1'>_</span>
+        <div className="fakeScreen">
+          <p className="line1">
+            $ npm start software-engineering<span className="cursor1">_</span>
           </p>
-          <p className='line2'>
+          <p className="line2">
             When I first began working in Software Engineering, I didn't
           </p>
-          <p className='line3'>
+          <p className="line3">
             realize how naturally things would click for me. Recently, I
           </p>
-          <p className='line4'>
+          <p className="line4">
             completed a Full-Stack Software Engineering Fellowship at
           </p>
-          <p className='line5'>
+          <p className="line5">
             General Assembly. There, I challenged myself to build upon my
           </p>
-          <p className='line6'>
+          <p className="line6">
             Software Engineering knowledge and master those skills. I
           </p>
-          <p className='line7'>
+          <p className="line7">
             also created some of my favorite projects/applications to
           </p>
-          <p className='line8'>
+          <p className="line8">
             date in the fellowship! Feel free to check them out in the
           </p>
-          <p className='line9'>
+          <p className="line9">
             projects section.
-            <span className='cursor2'>_</span>
+            <span className="cursor2">_</span>
           </p>
-          <p className='line10'>
+          <p className="line10">
             [?] Looking to collaborate on a project/application? Contact
           </p>
-          <p className='line11'>
+          <p className="line11">
             me via the contact section and let's connect!
-            <span className='cursor3'>_</span>
+            <span className="cursor3">_</span>
           </p>
-          <p className='line12'>
+          <p className="line12">
             (Press any of the color buttons to exit terminal)
-            <span className='cursor4'>_</span>
+            <span className="cursor4">_</span>
           </p>
-          <p className='line13'>
+          <p className="line13">
             {`>`}
-            <span className='cursor5'>_</span>
+            <span className="cursor5">_</span>
           </p>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export function NotedModal({ isNotedModalOpen, closeNotedModal }) {
   return (
     <div
-      className={`modal ${isNotedModalOpen ? 'active' : ''}`}
-      id='NotedModal'
-    >
-      <div className='modal-box'>
-        <div className='modal-container'>
-          <span className='close' onClick={closeNotedModal}>
+      className={`modal ${isNotedModalOpen ? "active" : ""}`}
+      id="NotedModal">
+      <div className="modal-box">
+        <div className="modal-container">
+          <span className="close" onClick={closeNotedModal}>
             &times;
           </span>
           <h2>Noted</h2>
-          <div className='modal-content'>
-            <div className='modal-photo-container'>
-              <a href='https://noted.world' target='_blank' rel='noreferrer'>
-                <img src={noted2} alt='noted app' className='modal-photo' />
+          <div className="modal-content">
+            <div className="modal-photo-container">
+              <a href="https://noted.world" target="_blank" rel="noreferrer">
+                <img src={noted2} alt="noted app" className="modal-photo" />
               </a>
             </div>
-            <div className='modal-text-container'>
-              <div className='modal-description'>
+            <div className="modal-text-container">
+              <div className="modal-description">
                 <h4>
                   <i>
                     <u>About Noted:</u>
@@ -103,27 +101,29 @@ export function NotedModal({ isNotedModalOpen, closeNotedModal }) {
                   track’, personal thoughts).
                 </h6>
                 <h6>
-                In addition to its core functionality, Noted, which is currently in Version 2, now includes: the 'Standout Mix', which compiles a users' 'standout tracks' into one playlist, and a 'Record of the Month' feature, which provides users with a handpicked album recommendation from yours truly. 
+                  In addition to its core functionality, Noted, which is
+                  currently in Version 2, now includes: the 'Standout Mix',
+                  which compiles a users' 'standout tracks' into one playlist,
+                  and a 'Record of the Month' feature, which provides users with
+                  a handpicked album recommendation from yours truly.
                 </h6>
               </div>
             </div>
-            <div className='modal-links'>
+            <div className="modal-links">
               <a
-                href='https://github.com/eddie-hernandez/recd-recs-tracker-client'
-                rel='noreferrer'
-                target='_blank'
-                className='link-container'
-              >
+                href="https://github.com/eddie-hernandez/recd-recs-tracker-client"
+                rel="noreferrer"
+                target="_blank"
+                className="link-container">
                 <h6>View on Github</h6>
-                <img src={github} alt='github icon' className='github-icon' />
+                <img src={github} alt="github icon" className="github-icon" />
               </a>
               <h6>&nbsp; | &nbsp;</h6>
               <a
-                href='https://noted.world'
-                rel='noreferrer'
-                target='_blank'
-                className='link-container'
-              >
+                href="https://noted.world"
+                rel="noreferrer"
+                target="_blank"
+                className="link-container">
                 <h6>Noted Website</h6>
               </a>
             </div>
@@ -131,33 +131,31 @@ export function NotedModal({ isNotedModalOpen, closeNotedModal }) {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export function LerprModal({ isLerprModalOpen, closeLerprModal }) {
   return (
     <div
-      className={`modal ${isLerprModalOpen ? 'active' : ''}`}
-      id='LerprModal'
-    >
-      <div className='modal-box'>
-        <div className='modal-container'>
-          <span className='close' onClick={closeLerprModal}>
+      className={`modal ${isLerprModalOpen ? "active" : ""}`}
+      id="LerprModal">
+      <div className="modal-box">
+        <div className="modal-container">
+          <span className="close" onClick={closeLerprModal}>
             &times;
           </span>
           <h2>Lerpr</h2>
-          <div className='modal-content'>
-            <div className='modal-photo-container'>
+          <div className="modal-content">
+            <div className="modal-photo-container">
               <a
-                href='https://scottank.github.io/lerpr/'
-                rel='noreferrer'
-                target='_blank'
-              >
-                <img src={lerpr} alt='lerpr app' className='modal-photo' />
+                href="https://scottank.github.io/lerpr/"
+                rel="noreferrer"
+                target="_blank">
+                <img src={lerpr} alt="lerpr app" className="modal-photo" />
               </a>
             </div>
-            <div className='modal-text-container'>
-              <div className='modal-description'>
+            <div className="modal-text-container">
+              <div className="modal-description">
                 <h4>
                   <i>
                     <u>About Lerpr:</u>
@@ -183,23 +181,21 @@ export function LerprModal({ isLerprModalOpen, closeLerprModal }) {
                 </h6>
               </div>
             </div>
-            <div className='modal-links'>
+            <div className="modal-links">
               <a
-                href='https://github.com/ScottAnk/lerpr'
-                target='_blank'
-                rel='noreferrer'
-                className='link-container'
-              >
+                href="https://github.com/ScottAnk/lerpr"
+                target="_blank"
+                rel="noreferrer"
+                className="link-container">
                 <h6>View on Github</h6>
-                <img src={github} alt='github icon' className='github-icon' />
+                <img src={github} alt="github icon" className="github-icon" />
               </a>
               <h6>&nbsp; | &nbsp;</h6>
               <a
-                href='https://scottank.github.io/lerpr/'
-                target='_blank'
-                rel='noreferrer'
-                className='link-container'
-              >
+                href="https://scottank.github.io/lerpr/"
+                target="_blank"
+                rel="noreferrer"
+                className="link-container">
                 <h6>Lerpr Website</h6>
               </a>
             </div>
@@ -207,37 +203,35 @@ export function LerprModal({ isLerprModalOpen, closeLerprModal }) {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export function MovieModal({ isMovieModalOpen, closeMovieModal }) {
   return (
     <div
-      className={`modal ${isMovieModalOpen ? 'active' : ''}`}
-      id='MovieModal'
-    >
-      <div className='modal-box'>
-        <div className='modal-container'>
-          <span className='close' onClick={closeMovieModal}>
+      className={`modal ${isMovieModalOpen ? "active" : ""}`}
+      id="MovieModal">
+      <div className="modal-box">
+        <div className="modal-container">
+          <span className="close" onClick={closeMovieModal}>
             &times;
           </span>
           <h2>Movie Royale</h2>
-          <div className='modal-content'>
-            <div className='modal-photo-container'>
+          <div className="modal-content">
+            <div className="modal-photo-container">
               <a
-                href='https://movie-royale-client.onrender.com/'
-                target='_blank'
-                rel='noreferrer'
-              >
+                href="https://movie-royale-client.onrender.com/"
+                target="_blank"
+                rel="noreferrer">
                 <img
                   src={movieRoyale}
-                  alt='movie royale app'
-                  className='modal-photo'
+                  alt="movie royale app"
+                  className="modal-photo"
                 />
               </a>
             </div>
-            <div className='modal-text-container'>
-              <div className='modal-description'>
+            <div className="modal-text-container">
+              <div className="modal-description">
                 <h4>
                   <i>
                     <u>About Movie Royale:</u>
@@ -261,23 +255,21 @@ export function MovieModal({ isMovieModalOpen, closeMovieModal }) {
                 </h6>
               </div>
             </div>
-            <div className='modal-links'>
+            <div className="modal-links">
               <a
-                href='https://github.com/ScottAnk/movie-royale'
-                rel='noreferrer'
-                target='_blank'
-                className='link-container'
-              >
+                href="https://github.com/ScottAnk/movie-royale"
+                rel="noreferrer"
+                target="_blank"
+                className="link-container">
                 <h6>View on Github</h6>
-                <img src={github} alt='github icon' className='github-icon' />
+                <img src={github} alt="github icon" className="github-icon" />
               </a>
               <h6>&nbsp; | &nbsp;</h6>
               <a
-                href='https://movie-royale-client.onrender.com/'
-                rel='noreferrer'
-                target='_blank'
-                className='link-container'
-              >
+                href="https://movie-royale-client.onrender.com/"
+                rel="noreferrer"
+                target="_blank"
+                className="link-container">
                 <h6>Movie Royale Website</h6>
               </a>
             </div>
@@ -285,33 +277,31 @@ export function MovieModal({ isMovieModalOpen, closeMovieModal }) {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export function SimonModal({ isSimonModalOpen, closeSimonModal }) {
   return (
     <div
-      className={`modal ${isSimonModalOpen ? 'active' : ''}`}
-      id='SimonModal'
-    >
-      <div className='modal-box'>
-        <div className='modal-container'>
-          <span className='close' onClick={closeSimonModal}>
+      className={`modal ${isSimonModalOpen ? "active" : ""}`}
+      id="SimonModal">
+      <div className="modal-box">
+        <div className="modal-container">
+          <span className="close" onClick={closeSimonModal}>
             &times;
           </span>
           <h2>Simon (Ambient Edition)</h2>
-          <div className='modal-content'>
-            <div className='modal-photo-container'>
+          <div className="modal-content">
+            <div className="modal-photo-container">
               <a
-                href='https://eddie-hernandez.github.io/simon-ambient-edition/'
-                rel='noreferrer'
-                target='_blank'
-              >
-                <img src={simon} alt='simon app' className='modal-photo' />
+                href="https://eddie-hernandez.github.io/simon-ambient-edition/"
+                rel="noreferrer"
+                target="_blank">
+                <img src={simon} alt="simon app" className="modal-photo" />
               </a>
             </div>
-            <div className='modal-text-container'>
-              <div className='modal-description'>
+            <div className="modal-text-container">
+              <div className="modal-description">
                 <h4>
                   <i>
                     <u>About Simon (Ambient Edition):</u>
@@ -335,23 +325,21 @@ export function SimonModal({ isSimonModalOpen, closeSimonModal }) {
                 </h6>
               </div>
             </div>
-            <div className='modal-links'>
+            <div className="modal-links">
               <a
-                href='https://github.com/eddie-hernandez/simon-ambient-edition'
-                rel='noreferrer'
-                target='_blank'
-                className='link-container'
-              >
+                href="https://github.com/eddie-hernandez/simon-ambient-edition"
+                rel="noreferrer"
+                target="_blank"
+                className="link-container">
                 <h6>View on Github</h6>
-                <img src={github} alt='github icon' className='github-icon' />
+                <img src={github} alt="github icon" className="github-icon" />
               </a>
               <h6>&nbsp; | &nbsp;</h6>
               <a
-                href='https://eddie-hernandez.github.io/simon-ambient-edition/'
-                rel='noreferrer'
-                target='_blank'
-                className='link-container'
-              >
+                href="https://eddie-hernandez.github.io/simon-ambient-edition/"
+                rel="noreferrer"
+                target="_blank"
+                className="link-container">
                 <h6>Simon Website</h6>
               </a>
             </div>
@@ -359,5 +347,5 @@ export function SimonModal({ isSimonModalOpen, closeSimonModal }) {
         </div>
       </div>
     </div>
-  )
+  );
 }

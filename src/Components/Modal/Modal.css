@@ -8,7 +8,7 @@
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: hidden; /* Enable scroll if needed */
-  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+  background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
 }
 
 /* Modal Box */
@@ -101,7 +101,6 @@
   cursor: pointer;
 }
 
-
 .modal.active {
   display: block;
   animation: showModal 0.2s forwards ease-in-out;
@@ -129,7 +128,6 @@
   border-color: #9d252b;
   display: inline-block;
 }
-
 
 .fakeMinimize {
   left: 11px;
@@ -199,9 +197,9 @@ span {
 }
 
 .line1 {
-  color: #9CD9F0;
-  -webkit-animation: type .5s .5s steps(20, end) forwards;
-  animation: type .5s .5s steps(20, end) forwards;
+  color: #9cd9f0;
+  -webkit-animation: type 0.5s 0.5s steps(20, end) forwards;
+  animation: type 0.5s 0.5s steps(20, end) forwards;
   margin-bottom: 1em;
 }
 
@@ -213,51 +211,51 @@ span {
 /* PARAGRAPH 2 */
 
 .line2 {
-  color: #CDEE69;
-  -webkit-animation: type .25s 3.25s steps(20, end) forwards;
-  animation: type .25s 3.25s steps(20, end) forwards;
+  color: #cdee69;
+  -webkit-animation: type 0.25s 3.25s steps(20, end) forwards;
+  animation: type 0.25s 3.25s steps(20, end) forwards;
 }
 
 .line3 {
-  color: #CDEE69;
-  -webkit-animation: type .25s 3.30s steps(20, end) forwards;
-  animation: type .25s 3.30s steps(20, end) forwards;
+  color: #cdee69;
+  -webkit-animation: type 0.25s 3.3s steps(20, end) forwards;
+  animation: type 0.25s 3.3s steps(20, end) forwards;
 }
 
 .line4 {
-  color: #CDEE69;
-  -webkit-animation: type .25s 3.35s steps(20, end) forwards;
-  animation: type .25s 3.35s steps(20, end) forwards;
+  color: #cdee69;
+  -webkit-animation: type 0.25s 3.35s steps(20, end) forwards;
+  animation: type 0.25s 3.35s steps(20, end) forwards;
 }
 
 .line5 {
-  color: #CDEE69;
-  -webkit-animation: type .25s 3.40s steps(20, end) forwards;
-  animation: type .25s 3.40s steps(20, end) forwards;
+  color: #cdee69;
+  -webkit-animation: type 0.25s 3.4s steps(20, end) forwards;
+  animation: type 0.25s 3.4s steps(20, end) forwards;
 }
 
 .line6 {
-  color: #CDEE69;
-  -webkit-animation: type .25s 3.45s steps(20, end) forwards;
-  animation: type .25s 3.45s steps(20, end) forwards;
+  color: #cdee69;
+  -webkit-animation: type 0.25s 3.45s steps(20, end) forwards;
+  animation: type 0.25s 3.45s steps(20, end) forwards;
 }
 
 .line7 {
-  color: #CDEE69;
-  -webkit-animation: type .25s 3.5s steps(20, end) forwards;
-  animation: type .25s 3.5s steps(20, end) forwards;
+  color: #cdee69;
+  -webkit-animation: type 0.25s 3.5s steps(20, end) forwards;
+  animation: type 0.25s 3.5s steps(20, end) forwards;
 }
 
 .line8 {
-  color: #CDEE69;
-  -webkit-animation: type .25s 3.55s steps(20, end) forwards;
-  animation: type .25s 3.55s steps(20, end) forwards;
+  color: #cdee69;
+  -webkit-animation: type 0.25s 3.55s steps(20, end) forwards;
+  animation: type 0.25s 3.55s steps(20, end) forwards;
 }
 
 .line9 {
-  color: #CDEE69;
-  -webkit-animation: type .25s 3.6s steps(20, end) forwards;
-  animation: type .25s 3.6s steps(20, end) forwards;
+  color: #cdee69;
+  -webkit-animation: type 0.25s 3.6s steps(20, end) forwards;
+  animation: type 0.25s 3.6s steps(20, end) forwards;
   margin-bottom: 1em;
 }
 
@@ -269,15 +267,15 @@ span {
 /* PARAGRAPH 3 */
 
 .line10 {
-  color: #E09690;
-  -webkit-animation: type .25s 6.65s steps(20, end) forwards;
-  animation: type .25s 6.65s steps(20, end) forwards;
+  color: #e09690;
+  -webkit-animation: type 0.25s 6.65s steps(20, end) forwards;
+  animation: type 0.25s 6.65s steps(20, end) forwards;
 }
 
 .line11 {
-  color: #E09690;
-  -webkit-animation: type .25s 6.7s steps(20, end) forwards;
-  animation: type .25s 6.7s steps(20, end) forwards;
+  color: #e09690;
+  -webkit-animation: type 0.25s 6.7s steps(20, end) forwards;
+  animation: type 0.25s 6.7s steps(20, end) forwards;
   margin-bottom: 1em;
 }
 
@@ -290,8 +288,8 @@ span {
 
 .line12 {
   color: #eb9a4e;
-  -webkit-animation: type .25s 8.85s steps(20, end) forwards;
-  animation: type .25s 8.85s steps(20, end) forwards;
+  -webkit-animation: type 0.25s 8.85s steps(20, end) forwards;
+  animation: type 0.25s 8.85s steps(20, end) forwards;
   margin-bottom: 1em;
 }
 
@@ -304,8 +302,8 @@ span {
 
 .line13 {
   color: #fff;
-  -webkit-animation: type .5s 11s steps(20, end) forwards;
-  animation: type .5s 11s steps(20, end) forwards;
+  -webkit-animation: type 0.5s 11s steps(20, end) forwards;
+  animation: type 0.5s 11s steps(20, end) forwards;
 }
 
 .cursor5 {

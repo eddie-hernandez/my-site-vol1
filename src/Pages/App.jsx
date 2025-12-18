@@ -1,24 +1,24 @@
-import './App.css'
-import { useInView } from 'react-intersection-observer'
-import Header from '../Components/Header/Header'
-import Home from './Home/Home'
-import About from './About/About'
-import Projects from './Projects/Projects'
-import Resume from './Resume/Resume'
-import Contact from './Contact/Contact'
-import Footer from '../Components/Footer/Footer'
+import "./App.css";
+import { useInView } from "react-intersection-observer";
+import Header from "../Components/Header/Header";
+import Home from "./Home/Home";
+import About from "./About/About";
+import Projects from "./Projects/Projects";
+import Resume from "./Resume/Resume";
+import Contact from "./Contact/Contact";
+import Footer from "../Components/Footer/Footer";
 
 export default function App() {
   // checks if a specific page is in view for navbar to show which page is "active"
-  const { ref: topRef, inView: isTopActive } = useInView()
-  const { ref: aboutRef, inView: isAboutActive } = useInView()
-  const { ref: projectRef, inView: isProjectActive } = useInView()
-  const { ref: resumeRef, inView: isResumeActive } = useInView()
-  const { ref: contactRef, inView: isContactActive } = useInView()
+  const { ref: topRef, inView: isTopActive } = useInView();
+  const { ref: aboutRef, inView: isAboutActive } = useInView();
+  const { ref: projectRef, inView: isProjectActive } = useInView();
+  const { ref: resumeRef, inView: isResumeActive } = useInView();
+  const { ref: contactRef, inView: isContactActive } = useInView();
 
   return (
     <>
-      <div className='app'>
+      <div className="app">
         <Home topRef={topRef} />
         <Header
           isTopActive={isTopActive}
@@ -34,5 +34,5 @@ export default function App() {
         <Footer />
       </div>
     </>
-  )
+  );
 }

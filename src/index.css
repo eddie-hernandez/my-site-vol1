@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap");
 
 /* COLOR PALETTE */
 
@@ -11,7 +11,10 @@
 
 /* MASTER SETTINGS */
 
-html, body, #root, .app {
+html,
+body,
+#root,
+.app {
   height: 100%;
 }
 
